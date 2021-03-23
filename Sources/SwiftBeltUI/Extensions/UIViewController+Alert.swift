@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftBelt
 
 public extension UIViewController {
     func displayAlert(title: String, message: String, action: ((UIAlertAction) -> Void)?) {
