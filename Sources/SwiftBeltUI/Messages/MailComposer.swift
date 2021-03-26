@@ -1,10 +1,10 @@
 //
-//  File.swift
+//  MailComposer.swift
 //  
 //
 //  Created by Thomas Delgado on 16/03/21.
 //
-
+#if !os(watchOS)
 import Foundation
 import MessageUI
 
@@ -56,4 +56,4 @@ extension MailComposer: UINavigationControllerDelegate {
         controller.dismiss(animated: true, completion: nil)
     }
 }
-
+#endif

@@ -6,8 +6,8 @@
 //
 import UIKit
 
-extension UINavigationController {
-    public static func topViewController(
+public extension UINavigationController {
+    static func topViewController(
         base: UIViewController? = UIApplication.shared.getKeyWindow()?.rootViewController) -> UIViewController? {
         if let navigationController = base as? UINavigationController {
             return topViewController(base: navigationController.visibleViewController)
