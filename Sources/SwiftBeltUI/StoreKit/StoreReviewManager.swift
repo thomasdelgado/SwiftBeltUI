@@ -8,7 +8,7 @@
 import StoreKit
 import SwiftUI
 
-public protocol StoreReviewServiceProtocol: class {
+public protocol StoreReviewServiceProtocol: AnyObject {
     func positiveReview(completion: @escaping (Bool) -> Void)
     func negativeReview(comment: String, completion: @escaping (Bool) -> Void)
 }
